@@ -16,5 +16,9 @@ def create
     else
       render 'new'
     end
-  end
+end
+
+def edit
+  @user = User.find(params[:id])
+end
 end
